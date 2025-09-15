@@ -1,9 +1,5 @@
 @charset "utf-8";
 /* CSS Document */
-@font-face{
-	font-family: "Montserrat";
-	src: url("../fonts/montserrat.woff2") format("opentype");
-}
 body{margin: 0;padding: 0;font-family: Montserrat;background-color: black;}
 body *{margin: 0;padding: 0;transition: 1.5s ease;color: white;}
 header, footer, #header_overlay, .text, nav{display: flex;align-items: center;justify-content: center;}
@@ -90,4 +86,5 @@ footer *{margin: 0;padding: 0;}
 #impressum p{
 	padding-left: 2vw;
 	padding-right: 2vw;
+
 }
