@@ -20,6 +20,11 @@
 	<link rel="preconnect" href="https://google.com/maps">
 	<link rel="preconnect" href="https://google.com/maps" crossorigin>
 	<!--<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://google.com/maps; font-src https://google.com/maps;">-->
+	<style>
+		@font-face{font-family: "Montserrat";src: url("fonts/montserrat.woff2") format("opentype");}
+		body{font-family: Montserrat;}		
+	</style>
+
 </head>
 
 
@@ -27,7 +32,7 @@
 	<main>
 		<header>
 			<div id="header_overlay">
-				<img src="images/logo_ar.svg" alt="Logo" class="logo">
+				<img src="images/logo_ar.svg" alt="Logo" class="logo" fetchpriority="high">
 				<h1>AR KFZ-Technik GmbH</h1>
 				<nav>
 					<a href="tel:+4366475150012" class="button">Anrufen</a>
@@ -128,3 +133,4 @@
 	</main>
 </body>
 </html>
+
