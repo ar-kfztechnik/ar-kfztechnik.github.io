@@ -7,7 +7,7 @@ header, footer, .element{height: 100vh;}
 main{text-align: center;scroll-snap-align: start;width: 100%;overflow-y: scroll;overflow-x: hidden;	scroll-snap-type: y mandatory; height: 100vh}
 main > header, .element, section, footer{width: 100%;scroll-snap-align: start;scroll-snap-stop: always;}
 main, header, footer, #header_overlay, .text, nav{flex-direction: column;}
-header{background: url("../images/headerbild_andreas_uhd.webp") no-repeat;background-position: 50%;background-size:cover;}
+header{}
 #header_overlay, .text{background-color: rgba(0,0,0,0.7);backdrop-filter: blur(7px);}
 header #header_overlay{height: 100%;width: 100%;}
 header #header_overlay h1{display: none;}
@@ -88,4 +88,5 @@ footer *{margin: 0;padding: 0;}
 	padding-right: 2vw;
 
 }
+
 
