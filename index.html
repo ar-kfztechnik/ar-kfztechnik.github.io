@@ -22,7 +22,17 @@
 	<!--<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://google.com/maps; font-src https://google.com/maps;">-->
 	<style>
 		@font-face{font-family: "Montserrat";src: url("fonts/montserrat.woff2") format("opentype");font-display: swap;}
-		body{font-family: Montserrat;}		
+		body{font-family: Montserrat;}
+		header{background: url("../images/headerbild_andreas_uhd.webp") no-repeat;background-position: 50%;background-size:cover;}
+		@media screen and (max-width: 800px){
+			header{background: url("../images/headerbild_andreas_fhd.webp")}
+		}
+		@media screen and (max-width: 1400px){
+			header{background: url("../images/headerbild_andreas_qhd.webp")}
+		}
+		@media screen and (max-width: 2000px){
+			header{background: url("../images/headerbild_andreas_uhd.webp")}
+		}
 	</style>
 
 </head>
@@ -133,6 +143,7 @@
 	</main>
 </body>
 </html>
+
 
 
 
