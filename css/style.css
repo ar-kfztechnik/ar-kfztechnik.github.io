@@ -20,9 +20,9 @@ nav .button{width: 150px;font-weight: 700;}
 #ueber_text{background-color: rgba(143,0,0,0.7)}
 #galerie{overflow: hidden}
 #galerie img{min-height: 100vh;min-width: 100vw;}
-footer{justify-content: space-around;background-color: rgba(150,150,150,1.00); font-size:1.2em}
-footer .logo{filter: grayscale(40%) invert(50%);}
-footer table{width: 80%;}
+footer{justify-content: space-around;background-color: rgba(150,150,150,1.00); font-size:1em}
+footer .logo{filter: grayscale(40%) invert(50%); width:60%}
+footer table{width: 95%;}
 footer tr *{padding: 5px;}
 footer tr *{text-align: right;}
 footer tr *:nth-child(odd){text-align: left;}
@@ -33,6 +33,7 @@ footer *{margin: 0;padding: 0;}
 @media screen and (max-width: 801px){
 	header .logo{width: 70%;}
 	.bild img{height: 100%;margin-left: -40%;}
+	.text{font-size: 1.1em}
 }
 @media screen and (min-width: 801px){
 	section{display: flex;align-items: center;justify-content: center;	}
@@ -88,5 +89,6 @@ footer *{margin: 0;padding: 0;}
 	padding-right: 2vw;
 
 }
+
 
 
