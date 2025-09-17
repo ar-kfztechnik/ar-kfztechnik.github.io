@@ -36,13 +36,9 @@
 		}
 		
 		/*Höhe*/
-		main, header, #header_overlay, .element, #galerie, footer{
-			height: 100vh
-		}
+		main, header, #header_overlay, .element, #galerie, footer{height: 100vh;}
 		/*Breite*/
-		main, #header_overlay{
-			width: 100%
-		}
+		main, #header_overlay{width: 100%;}
 		/*Flex*/
 		header, #header_overlay, .element, #galerie, footer, nav, #oeffnungszeiten{
 			display: flex;
@@ -58,6 +54,11 @@
 		main > header, .element, #galerie, footer{
 			scroll-snap-align: start;
 			scroll-snap-stop: always;
+		}
+		/*Bilder*/
+		#galerie img, .bild img{
+			min-height: 100%;
+			min-width: 100%;
 		}
 		#header_overlay{
 			background-color: rgba(0,0,0,0.8);
@@ -80,6 +81,12 @@
 		footer img{
 			filter: grayscale(40%) invert(50%);
 		}
+		footer td:nth-child(odd){
+				text-align: left
+			}
+			footer td:nth-child(even){
+				text-align: right
+			}
 		
 		.button{text-decoration: none;background-color: white;color: black;border: 1.5px solid white;padding: 1em;text-transform: uppercase;border-radius: 100px;margin: 1em;}
 .button:hover{background-color: rgba(0,0,0,0);color: white;}
@@ -132,9 +139,6 @@
 			.bild{
 				height: 100vh;
 			}
-			.bild img{
-				height: 100%;
-			}
 			.text{
 				text-align: center;
 			}
@@ -145,12 +149,7 @@
 				padding-right: 2vh;
 				text-align: justify;
 			}
-			#galerie{
-				height: 100vh;
-			}
-			#galerie img{
-				height: 100%;
-			}
+	
 			.element{
 				overflow: hidden;
 			}
@@ -190,12 +189,6 @@
 				justify-content: space-between;
 				align-items: center;
 				width: 30%;
-			}
-			.bild img{
-				width: 100%;
-			}
-			#galerie img{
-				width: 100%;
 			}
 			.text p{
 				padding-top: 20px;
@@ -248,13 +241,7 @@
 			}
 			
 			
-						#galerie{
-				height: 100vh;
-				width: 100%;
-			}
-			#galerie img{
-				min-height: 100%;
-				min-width: 100%;
+			#galerie{
 				width: 100%;
 			}
 			
@@ -322,12 +309,7 @@
 			footer td{
 				height: 6vh;
 			}
-			footer td:nth-child(odd){
-				text-align: left
-			}
-			footer td:nth-child(even){
-				text-align: right
-			}
+			
 
 			
 			
@@ -350,7 +332,6 @@
 			
 			
 			.bild{height: 100vh;}
-			.bild img{min-height: 100vh; min-width: 100%}
 			.text p{
 				padding-left: 20vw;
 				padding-right: 20vw;
@@ -362,11 +343,7 @@
 				font-size: 3em;
 				font-weight: 1000;
 			}
-			#galerie img{
-				min-width: 100%;
-				min-height: 100%;
-			
-			}
+
 			footer{
 				justify-content: space-around;
 			}
@@ -406,15 +383,9 @@
 		}
 		
 		header{background: url("images/headerbild_andreas_uhd.webp") no-repeat; background-size:cover;}
-		@media screen and (max-width: 800px){
-			header{background: url("images/headerbild_andreas_fhd.webp") no-repeat; background-size:cover; background-position: 50% }
-		}
-		@media screen and (max-width: 1400px){
-			header{background: url("images/headerbild_andreas_qhd.webp") no-repeat; background-size:cover;}
-		}
-		@media screen and (max-width: 2000px){
-			header{background: url("images/headerbild_andreas_uhd.webp")no-repeat; background-size:cover;}
-		}
+		@media screen and (max-width: 800px){header{background: url("images/headerbild_andreas_fhd.webp") no-repeat; background-size:cover; background-position: 50%;}		}
+		@media screen and (max-width: 1400px){header{background: url("images/headerbild_andreas_qhd.webp") no-repeat; background-size:cover;}}
+		@media screen and (max-width: 2000px){header{background: url("images/headerbild_andreas_uhd.webp")no-repeat; background-size:cover;}}
 		
 		
 		
@@ -522,3 +493,4 @@
 	</main>
 </body>
 </html>
+
